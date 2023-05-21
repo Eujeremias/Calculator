@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
     <div id="container">
-        <input type="number" id="value1">
-        <input type="number" id="value2">
-
-        <div id="buttons">
-            <button id="btnSum">+</button>
-            <button id="btnSub">-</button>
-            <button id="btnMulti">*</button>
-            <button id="btnDiv">/</button>
-            <button id="btnPoten">^</button>
-            <button id="btnClear">Clear</button>
+        <div id="content">
+            <div class ="bolhas"></div>
+            <h1>Calculadora Inimiga do CSS</h1>
+            <div class="input1">
+                <label for="value1" class="texto">Insira o primeiro valor</label>
+                <input type="number" class="inputs" id="value1">
+            </div>
+            <div class="input2">
+                <label for="value2" class="texto">Insira o segundo valor</label>
+                <input type="number" class="inputs" id="value2">
+            </div>
+            
+            <div id="buttons">
+                <button id="btnSum">+</button>
+                <button id="btnSub">-</button>
+                <button id="btnMulti">*</button>
+                <button id="btnDiv">/</button>
+                <button id="btnPoten">^</button>
+                <button id="btnRaiz">raiz</button>
+                <button id="btnFatorial">!</button>
+                <button id="btnClear">Clear</button>
+            </div>
+            <h3 id="output"></h3>
+            <h3 id="outputPrimo"></h3>
         </div>
-        <h3 id="output"></h3>
-
     </div>
+    <script src="./bolha.js"></script>
     <script src="./funcoes.js"></script>
     <script src="./script.js"></script>
 </body>
